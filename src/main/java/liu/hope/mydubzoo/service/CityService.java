@@ -17,6 +17,7 @@ public class CityService {
     @Resource
     private CityMapper cityMapper;
 
+    @Resource
     private RedisTemplate<String,City> redisTemplate;
 
     public City getCityById(int id){

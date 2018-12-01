@@ -24,8 +24,8 @@ public class CityController {
 
 
     @GetMapping("/city/getCityById")
-    @ApiImplicitParam(name = "id", value = "国家ID" ,required = true, dataType = "Integer")
-    public City getCityById(@RequestParam(name = "id") Integer id){
+    @ApiImplicitParam(name = "id", value = "国家ID" ,required = true, paramType = "query")
+    public City getCityById(@RequestParam Integer id){
         City city = cityService.getCityById(id);
         return city;
     }

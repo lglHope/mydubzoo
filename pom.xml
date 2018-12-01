@@ -81,6 +81,26 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+
+        <!-- thymeleaf模板引擎 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!-- aop切面 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!-- krt-generator -->
+        <!--<dependency>-->
+            <!--<groupId>com.liu.hope</groupId>-->
+            <!--<artifactId>lgl-generator</artifactId>-->
+            <!--<version>1.6-SNAPSHOT</version>-->
+        <!--</dependency>-->
+
     </dependencies>
 
     <build>

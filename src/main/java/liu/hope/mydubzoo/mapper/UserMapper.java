@@ -24,4 +24,7 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     Integer checkUsername(@Param("username") String username, @Param("id") Integer id);
+
+    @Select("select u.* from t_user u left join t_token t on u.id = t.user_id where access_token = #{token}")
+    User selectByToken(@Param("token") String token);
 }

@@ -45,4 +45,9 @@ public class UserService extends BaseServiceImpl<User> {
     }
 
 
+    public User selectByToken(String token){
+        User user = userMapper.selectByToken(token);
+        return user;
+    }
+
 }

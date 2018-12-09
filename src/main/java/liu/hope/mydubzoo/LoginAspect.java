@@ -46,10 +46,10 @@ public class LoginAspect {
         if (method.isAnnotationPresent(IsLogin.class)){
             // 验证是否登录
             if(!isLogin(request)){
-                return "会话过期,请重新登录!";
+                return "login/failed";
             }
         }
-        return "登录成功!";
+        return "login/failed";
     }
 
     private boolean isLogin(HttpServletRequest request){
